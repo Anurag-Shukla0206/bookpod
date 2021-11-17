@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Shippori+Antique+B1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-logo img{
+    height: 30px;
+    width: 20px;
+    background: red;
+    display: none;
+}
+nav{
+    display: block;
+    background: red;
+    padding: 5px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 70px;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-logo p{
+    font-size: 35px;
+    font-family: sans;
+    font-weight: bold;
+}
+.nav-logo span{
+    color: #004687;
+}
+.nav-links{
+    flex: 1;
+    position: relative;
+    left: 20%;
+    top: 10px;
+}
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.search-box{
+    background: #efefefec;
+    width: 170px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+    left: 100px;
+    top: -10px;
+}
+.nav-bar .search{
+    display: none;
+}
+.search-box img{
+    width: 20px;
+    height: 20px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.search-box ::placeholder{
+    font-size: 20px;
+    color: gray;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+.head #home{
+    font-size: 75px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+.head #home span{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: #004687
+}
+.head #books {
+    font-size: 75px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 355px;
+}
+.head #books span{
+    font-size: 75px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    left: 355px;
+}
+.para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+#para-g{
+    font-size: 25px;
+    color: darkgrey;
+    position: relative;
+    left: 90px;
+    top: -60px;
+}
+#para-h{
+    font-size: 25px;
+    color: darkgrey;
+    position: absolute;
+    top: -10px;
+    left: 500px;
+}
+.para .banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    padding-left: 40px;
+    color: #fff;
+    border: 0.5px solid #fff; 
+    position: relative;
+    z-index: 1;
+    top: 40px;
+    left: -220px;
+}
+.para .banner-btn a span{
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #004687;
+    z-index: -1;
+    border-radius: 10px;
+}
+.image{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 300px;
+    padding: 30px
+}
+.image img{
+    height: 500px;
+    width: 750px;
+    position: relative;
+    border-radius: 30px;
+    left: 90px;
+    top: -80px;
+}
+.review{
+    height: 350px;
+    width: 550px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 60%;
+    box-shadow: 0 10px 5px 2px lightgrey;
+    border-radius: 30px;
+}
+.review h6{
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    color: #004687;
+}
+.review h2{
+    font-size: 40px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+.review p{
+    font-size: 20px;
+    padding: 3px;
+    position: relative;
+    left: 50px;
+    top: 70px;
+    color: grey;
+}
+.social-links{
+    color: red;
+    position:relative;
+    top: 130px;
+    left: 75%;
+}
+.social-links img{
+    height: 40px;
+    padding: 10px;
+}
+.container{
+    position: relative;
+    width: 1200px;
+    min-height: 500px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 130px;
+    left: 20px;
+}
+.heading{
+    font-size: 40px;
+    position: relative;
+    left: 35%;
+    color: #fff;
+    top: -40px;
+    padding: 20px;
+    float: center;
+    font-family: sans;
+}
+.container .left_Side{
+    position: relative;
+    background-color: #004687;
+    padding: 80px;
+    border-radius: 30px;
+    margin: 50px;
+    width: 1200px;
+    height: 600px;
+}
+.profileText{
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    top: -80px;
+}
+.profileText .imgbx{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 70px;
+}
+.profileText .imgbx img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    position: relative;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: left;
+    left: 40px;
+    font-family: sans;
+}
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+@media (max-width: 400px){
+    .nav-logo img{
+        display: block;
+        position: relative;
+        height: 30px;
+        width: 30px;
+        top: 10px;
+        left: -60px;
+    }
+    .nav-logo p{
+        font-size: 55px;
+        font-family: sans;
+        font-weight: bold;
+        position: relative;
+        top: -50px;
+        left: 80%;
+}
+    .nav-links{
+        display: none;
+    }
+    .search-box{
+        display: none;
+    }
+    .nav-bar .search{
+        height: 40px;
+        width: 40px;
+        position: relative;
+        left: 450px;
+        top: 5px;
+        display: block;
+    }
+    
+    
+    .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+.head #home{
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    position: relative;
+    top: -50px;
+    left: 150px;
+}
+.head #home span{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: #004687;
+    position: relative;
+    top: -80px;
+    left: 230px;
+}
+.head #books{
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    text-align: center;
+    display: flex;
+}
+    .head #books span{
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 270px;
+    text-align: center;
+    display: flex;
+}
+    .para{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+    #para-g{
+    font-size: 20px;
+    color: darkgrey;
+    position: relative;
+    left: 200px;
+    top: -170px;
+}
+#para-h{
+    font-size: 20px;
+    color: darkgrey;
+    position: relative;
+    top: -160px;
+    left: 220px;
+}
+.para .banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: flex;
+    padding: 15px;
+    padding-left: 40px;
+    color: #fff;
+    border: 0.5px solid #fff; 
+    position: absolute;
+    z-index: 1;
+    top: -60px;
+    left: 300px;
+}
+.para .banner-btn a span{
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #004687;
+    z-index: -1;
+    border-radius: 10px;
+}
+    .image{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    padding: 30px;
+    left: -40px;    
+    
+}
+.image img{
+    height: 400px;
+    width: 700px;
+    position: relative;
+    border-radius: 30px;
+    left: 130px;
+    top: -80px;
+}
+    .review{
+    height: 450px;
+    width: 550px;
+    background: #fff;
+    position: absolute;
+    top: 270px;
+    left: 60%;
+    box-shadow: 0 10px 5px 2px lightgrey;
+    border-radius: 30px;
+    padding: 30px;
+}
+    .review h2{
+        font-size: 45px;
+    }
+    .review p{
+    font-size: 25px;
+    padding: 3px;
+    position: absolute;
+    left: 50px;
+    top: 250px;
+    color: grey;
+}
+    .social-links{
+    color: red;
+    position:relative;
+    top: 520px;
+    left: 70%;
+}
+.social-links img{
+    height: 80px;
+    padding: 15px;
+}
+    .heading{
+    font-size: 40px;
+    position: relative;
+    left: 35%;
+    color: #fff;
+    top: -40px;
+    padding: 20px;
+    left: 25%;
+    font-family: sans;
+}
+    .container{
+    position: relative;
+    width: 550px;
+    min-height: 800px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 500px;
+    left: 20px;
+}
+    .container .left_Side{
+    position: relative;
+    background-color: #004687;
+    padding: 80px;
+    border-radius: 30px;
+    margin: 50px;
+    width: 700px;
+    height: 1000px;
+}
+.profileText{
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    top: -80px;
+}
+.profileText .imgbx{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 70px;
+}
+.profileText .imgbx img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    position: relative;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: left;
+    left: 40px;
+    font-family: sans;
+}
+}
+
+
